@@ -14,7 +14,7 @@ def main(_, msg):
 	typertext = msg.text.split(".type ", maxsplit=1)[1]
 	symbol = "|"
 
-	for i in range(1, len(typertext) - 1):
+	for i in range(1, len(typertext) + 1):
 		try:
 			msg.edit(typertext[:i] + symbol)
 			time.sleep(random.uniform(0, 0.1))
